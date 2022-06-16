@@ -1,0 +1,150 @@
+/* maxwidth 375px */
+
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*:focus {outline:none !important}
+body{
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    /* font-size: 16px; */
+}
+
+main{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /* justify-content:space-evenly; */
+    align-items: center;
+}
+
+.container1{
+    /* flex-basis: 40%; */
+  position: relative;
+  /* margin-left: 50px; */
+  color: #fff;
+  width: 70%;
+}
+
+.container1 h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin: auto;
+}
+
+.container1 p{
+    margin-top: 20px;
+    font-weight: 500;
+    /* font-size: medium; */
+}
+
+.container2{
+    width: 70%;
+    margin: 50px;
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'b'
+    ;
+    gap: 20px;
+  /* flex-basis: 45%; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container{
+    /* border: 1px solid; */
+    border-radius: 6px;
+    background-color: hsl(248, 32%, 49%);
+    grid-area: a;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0 10px 0;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+form{
+    /* padding: 100px; */
+    width: 100%;
+}
+
+input{
+    width: 85%;
+    margin: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 4px;
+    color: hsl(249, 10%, 26%);
+}
+
+.active-input{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+input[id=fname] {
+    border: 1px solid hsl(249, 10%, 26%);
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    font-weight: 700;
+}
+
+
+button{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    font-weight: 700;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 85%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.main-form{
+    background-color: white;
+    grid-area: b;
+    border-radius: 6px;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.main-form span{
+    font-size: x-small;
+    font-weight: 600;
+}
+
+@media screen and (max-width:700px) {
+    main{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .container1{
+        width: 90%;
+        text-align: center;
+    }
+
+    .container2{
+        width: 90%;
+    }
+
+}
