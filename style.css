@@ -86,20 +86,19 @@ input{
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 4px;
     color: hsl(249, 10%, 26%);
-    transition: background 0.2s, border 0.2s;
+    /* transition: background 0.2s, border 0.2s; */
 }
 
-/* .input-container[data-error] .input{
-    /* outline: none;
-    border: none; */
+ /* .input-container[data-error] .input{
+    outline: none;
+    border: none;
     border: 1px solid hsl(0, 100%, 74%);
     background-image: url(/images/icon-error.svg);
     background-repeat: no-repeat;
     background-position: right;
-    background-origin: content-box;
-}
+    background-origin: content-box;} */
 
-.input-container[data-error]::after{
+/*.input-container[data-error]::after{
     content: attr(data-error);
     display: inline;
     float: right;
@@ -107,8 +106,7 @@ input{
     font-style: italic;
     font-size: smaller;
     /* width: 85%; */
-    margin: 5px 40px;
-    
+    margin: 5px 40px;  
 } */
  /* input:required{
     outline: none;
