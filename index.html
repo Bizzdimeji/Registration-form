@@ -25,10 +25,10 @@
         </div>
         <div class="main-form">
           <form>
-            <input type="text" id="fname" placeholder="Jonathan |" required><br>
-            <input type="text" id="lname" placeholder="Last Name" required><br>
-            <input type="email" id="eaddress" placeholder="Email Address" required><br>
-            <input type="password" id="pword" placeholder="Password" required><br>
+            <div class="input-container" data-error="First Name cannot be empty"><input type="text" id="fname" placeholder="Jonathan |" required><br></div>
+            <div class="input-container" data-error="Last Name cannot be empty"><input type="text" id="lname" placeholder="Last Name" required><br></div>
+            <div class="input-container" data-error="Looks like this is not an email"><input type="email" id="eaddress" placeholder="Email Address" required><br></div>
+            <div class="input-container" data-error="Password cannot be empty"><input type="password" id="pword" placeholder="Password" required><br></div>
             <button type="submit">CLAIM YOUR FREE TRIAL</button>
           </form>
 
@@ -37,5 +37,11 @@
         </div>
       </div>
     </main>
+
+    <!-- <script>
+      document.querySelectorAll('.input-container[data-error] .input').forEach(inpE1 =>{
+          inpE1.addEventListener('input', () => inpE1.parentElement.removeAttribute('data-error'));
+      });
+    </script> -->
   </body>
 </html>
