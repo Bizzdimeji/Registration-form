@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <main>
@@ -20,20 +20,56 @@
 
       <div class="container2">
         <div class="top-container">
-            <span>Try it free 7 days</span>
-            <span style="color: hsl(246, 25%, 77%);">then $20/mo. thereafter</span>
+          <span>Try it free 7 days</span>
+          <span style="color: hsl(246, 25%, 77%)">then $20/mo. thereafter</span>
         </div>
         <div class="main-form">
           <form>
-            <div class="input-container" data-error="First Name cannot be empty"><input type="text" id="fname" placeholder="Jonathan |" required><br></div>
-            <div class="input-container" data-error="Last Name cannot be empty"><input type="text" id="lname" placeholder="Last Name" required><br></div>
-            <div class="input-container" data-error="Looks like this is not an email"><input type="email" id="eaddress" placeholder="Email Address" required><br></div>
-            <div class="input-container" data-error="Password cannot be empty"><input type="password" id="pword" placeholder="Password" required><br></div>
+            <div
+              class="input-container"
+              data-error="First Name cannot be empty"
+            >
+              <input
+                type="text"
+                id="fname"
+                placeholder="Jonathan |"
+                required
+              /><br />
+            </div>
+            <div class="input-container" data-error="Last Name cannot be empty">
+              <input
+                type="text"
+                id="lname"
+                placeholder="Last Name"
+                required
+              /><br />
+            </div>
+            <div
+              class="input-container"
+              data-error="Looks like this is not an email"
+            >
+              <input
+                type="email"
+                id="eaddress"
+                placeholder="Email Address"
+                required
+              /><br />
+            </div>
+            <div class="input-container" data-error="Password cannot be empty">
+              <input
+                type="password"
+                id="pword"
+                placeholder="Password"
+                required
+              /><br />
+            </div>
             <button type="submit">CLAIM YOUR FREE TRIAL</button>
           </form>
 
-          <span style="color: hsl(246, 25%, 77%);">By clicking the button, you are agreeing to our </span>
-          <span style="color: hsl(0, 100%, 74%);">Terms and Services</span>
+          <span style="color: hsl(246, 25%, 77%)"
+            >By clicking the button, you are agreeing to our
+          </span>
+          <span style="color: hsl(0, 100%, 74%)">Terms and Services</span>
         </div>
       </div>
     </main>
